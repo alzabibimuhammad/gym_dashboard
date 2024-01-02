@@ -169,7 +169,7 @@ const PlayerGrid = ({ rows }) => {
                     </Item>
 
                   </Typography>
-                  <DrawerForm opent={openParent} setOpenParent={setOpenParent} />
+                  <DrawerForm open={openParent} setOpenParent={setOpenParent} />
                 </Box>
 
               </Stack>

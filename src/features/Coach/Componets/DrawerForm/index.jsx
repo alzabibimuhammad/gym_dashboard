@@ -29,7 +29,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }))
 
 
-export default function DrawerForm({ opent, setOpenParent,Data }) {
+export default function DrawerForm({ open, setOpenParent,Data }) {
   const theme = useTheme()
   const {t} = useTranslation()
 const dispatch=useDispatch()
@@ -38,7 +38,7 @@ const dispatch=useDispatch()
   const handleDrawerClose = () => {
     dispatch(getCoachesData())
     setOpenParent(false)
-    opent = false
+    open = false
     reset();
   }
 
@@ -99,7 +99,7 @@ const dispatch=useDispatch()
           }
         }}
         anchor='right'
-        open={opent}
+        open={open}
         variant='temporary'
         ModalProps={{
           keepMounted: true

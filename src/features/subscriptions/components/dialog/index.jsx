@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from "@mui/material";
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import { useDispatch } from "react-redux";
-import { SubscriptionsUpdate } from "src/pages/subscriptions/store";
+import { SubscriptionsUpdate, getSubscriptionsData } from "src/pages/subscriptions/store";
 import Stack from '@mui/material/Stack';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+
 
 export default function ActiveDialog({ id ,open ,handleClose ,Data }) {
   const dispatch = useDispatch()
@@ -15,6 +16,7 @@ export default function ActiveDialog({ id ,open ,handleClose ,Data }) {
 
   const handleSubscriptionsUpdate = () => {
       dispatch(SubscriptionsUpdate(id))
+      dispatch(getSubscriptionsData())
       handleClose()
   };
 
@@ -40,7 +42,7 @@ export default function ActiveDialog({ id ,open ,handleClose ,Data }) {
         </DialogContent>
         <DialogActions style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
           <Button onClick={handleClose} style={{ color: '#B4B4B3' }}>Cancel</Button>
-          <Button sx={{color: 'green' }}  onClick={()=>handleSubscriptionsUpdate(id)} autoFocus> Active</Button>
+          <Button onClick={()=>handleSubscriptionsUpdate(id)} sx={{color:"green"}} autoFocus> Active</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>
