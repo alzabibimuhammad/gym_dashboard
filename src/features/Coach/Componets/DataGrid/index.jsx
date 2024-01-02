@@ -37,7 +37,6 @@ const CoachGrid = ({ rows }) => {
 
   const [role, setRole] = useState('');
   const [status, setStatus] = useState('');
-  const [data, setData] = useState([]);
 
   const handleRoleChange = (e) => {
     setRole(e.target.value);
@@ -167,7 +166,7 @@ const CoachGrid = ({ rows }) => {
                     </Item>
 
                   </Typography>
-                  <DrawerForm opent={openParent} setOpenParent={setOpenParent} />
+                  <DrawerForm open={openParent} setOpenParent={setOpenParent} />
                 </Box>
 
               </Stack>

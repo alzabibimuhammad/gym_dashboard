@@ -18,10 +18,6 @@ const useReportColumns = () => {
   const [deleteId, setDeleteId] = useState(null);
 
 
-  const handleEditClick = (params) => {
-    setIsDrawerOpenEdit(true);
-    setEditData(params.row)
-  };
 
 
       const handleClickOpen = (id) => {

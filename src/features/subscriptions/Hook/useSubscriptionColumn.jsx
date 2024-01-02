@@ -96,27 +96,27 @@ const useSubscriptionColumn = () => {
       flex: 2,
       renderCell: (params) => {
         return(
-        <>
-        <Stack direction={"row"} spacing={2} justifyContent={"center"} marginTop={"10px"} >
-
-
-        <Box>
-
-
-            <Button onClick={() => handleClickOpen(params.row.id)} variant="contained" sx={{backgroundColor: 'green',    }}   size='small' disabled={params.row.paidStatus ==="paid"?true:""}>
-            Active
-            </Button>
-
-          </Box>
-
-          <Box >
-
-          </Box>
-
-      </Stack>
-      {isDeletePopupOpen && <ActiveDialog id={deleteId} open={isDeletePopupOpen} handleClose={handleClose} handleDelete={handleDelete} Data={params.row}   />}
-    </>
-    );
+          <>
+          <Stack direction={"row"} spacing={2} justifyContent={"center"} marginTop={"10px"} >
+    
+       
+          <Box>
+  
+  
+              <Button onClick={() => handleClickOpen(params.row.id)} variant="contained"    size='small' disabled={params.row.paidStatus ==="paid"?true:""}>
+              Active
+              </Button>
+  
+            </Box>
+           
+            <Box >
+  
+            </Box>
+  
+        </Stack>
+        {isDeletePopupOpen && <ActiveDialog id={deleteId} open={isDeletePopupOpen} handleClose={handleClose} handleDelete={handleDelete} Data={params.row}   />}
+      </>
+      );
     }
     }
   ])

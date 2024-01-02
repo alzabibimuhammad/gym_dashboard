@@ -25,8 +25,7 @@ const usePlayersColumns = () => {
     setEditData(row)
   };
 
-  const handleClickOpen = (params) => {
-    const { id } = params.row;
+  const handleClickOpen = (id) => {
     setDeleteId(id);
     setIsDeletePopupOpen(true);
 

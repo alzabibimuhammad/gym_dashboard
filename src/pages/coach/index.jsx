@@ -19,7 +19,7 @@ const [Data,setData]=useState([])
 
   return (
     <>
-   {Data ? <CoachGrid rows={Data}  /> :
+   {Data ? <CoachGrid rows={store.data?.data}  /> :
      <Box sx={{display: 'flex',justifyContent:"center",alignItems:"center",height:'50vh'}}>
      <CircularProgress />
      </Box>

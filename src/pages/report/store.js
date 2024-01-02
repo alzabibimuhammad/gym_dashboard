@@ -32,6 +32,7 @@ export const RemoveReport = createAsyncThunk('ReportStore/RemoveReport', async i
  }
  catch(error){
   showErrorToast(error.response?.data?.message);
+  
   return rejectWithValue(error.response?.data);
 
  }
