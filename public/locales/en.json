@@ -178,6 +178,14 @@
   "Description":"Description",
   "player":"player",
   "Year":"Year",
-  "Annual Income":"Annual Income"
+  "Annual Income":"Annual Income",
+  "Finance":"Finance",
+  "L.S":"L.S",
+  "Subscriptions":"Subscriptions",
+  "Paid Status":"Paid Status",
+  "Remaining Time":"Remaining Time",
+  "Subscription Date":"Subscription Date",
+  "days Not Paid":"days Not Paid",
+  "Status":"Status"
 
 }

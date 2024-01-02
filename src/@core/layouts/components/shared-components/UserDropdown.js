@@ -80,6 +80,10 @@ const UserDropdown = props => {
     logout()
     handleDropdownClose()
   }
+  const userData = JSON.parse(localStorage.getItem('userData'));
+
+  // Check if userData exists and has the 'image' property with at least one element
+  const imageSrc = userData && userData.image && userData.image[0] && userData.image[0].image;
 
   return (
     <Fragment>
@@ -95,7 +99,7 @@ const UserDropdown = props => {
       >
         <Avatar
           alt='John Doe'
-          src={process.env.NEXT_PUBLIC_IMAGES +'/'+JSON.parse(localStorage.getItem('userData')).image[0].image}
+          src={process.env.NEXT_PUBLIC_IMAGES +'/'+imageSrc}
           onClick={handleDropdownOpen}
           sx={{ width: 38, height: 38 }}
         />
@@ -118,7 +122,7 @@ const UserDropdown = props => {
                 horizontal: 'right'
               }}
             >
-              <Avatar alt='John Doe' src={process.env.NEXT_PUBLIC_IMAGES +'/'+JSON.parse(localStorage.getItem('userData')).image[0].image} sx={{ width: '2.5rem', height: '2.5rem' }} />
+              <Avatar alt='John Doe' src={process.env.NEXT_PUBLIC_IMAGES +'/'+imageSrc} sx={{ width: '2.5rem', height: '2.5rem' }} />
             </Badge>
             <Box sx={{ display: 'flex', ml: 2.5, alignItems: 'flex-start', flexDirection: 'column' }}>
               <Typography sx={{ fontWeight: 500 }}>{JSON.parse(localStorage.getItem('userData')).name}</Typography>

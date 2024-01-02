@@ -180,6 +180,14 @@
   "Description":"وصف",
   "player":"لاعب",
   "Year":"السنة",
-  "Annual Income":"الدخل السنوي"
+  "Annual Income":"الدخل السنوي",
+  "Finance":"الدفع",
+  "L.S":"ل.س",
+  "Subscriptions":"الاشتراكات",
+  "Paid Status":"حالة الدفع",
+  "Remaining Time":"الوقت المتبقي",
+  "Subscription Date":"تاريخ الاشتراك",
+  "days Not Paid":"الايام الغير مدفوعة",
+  "Status":"الحالة"
 
 }
