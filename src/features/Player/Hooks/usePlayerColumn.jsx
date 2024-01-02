@@ -106,7 +106,7 @@ const usePlayersColumns = () => {
           </Box>
           <Link href={`/players/playerProfile/${params.row.id}`} >
               <IconButton  >
-              <VisibilityIcon variant="contained" color="error" size='small'>Details</VisibilityIcon>
+              <VisibilityIcon variant="contained" sx={{ color:'#FF9F43' }}  size='small'>Details</VisibilityIcon>
               </IconButton>
 
           </Link>
