@@ -63,18 +63,18 @@ const useReportColumns = () => {
     {
       field: 'text',
       headerName: t("Reasone"),
-      flex: 5
+      flex: 6
     },
 
     {
       field: 'phoneNumber',
       headerName: t("Phone Number"),
-      flex: 2.5
+      flex: 2.3
     },
     {
       field: 'created_at',
       headerName: t("Date"),
-      flex: 3
+      flex: 1.8
     },
     {
       field: 'access',
