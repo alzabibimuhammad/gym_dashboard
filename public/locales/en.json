@@ -186,6 +186,9 @@
   "Remaining Time":"Remaining Time",
   "Subscription Date":"Subscription Date",
   "days Not Paid":"days Not Paid",
-  "Status":"Status"
+  "Status":"Status",
+  "Active":"Active",
+  "paid":"paid",
+  "unpaid":"unpaid"
 
 }

@@ -98,21 +98,21 @@ const useSubscriptionColumn = () => {
         return(
           <>
           <Stack direction={"row"} spacing={2} justifyContent={"center"} marginTop={"10px"} >
-    
-       
+
+
           <Box>
-  
-  
+
+
               <Button onClick={() => handleClickOpen(params.row.id)} variant="contained"    size='small' disabled={params.row.paidStatus ==="paid"?true:""}>
-              Active
+              {t('Active')}
               </Button>
-  
+
             </Box>
-           
+
             <Box >
-  
+
             </Box>
-  
+
         </Stack>
         {isDeletePopupOpen && <ActiveDialog id={deleteId} open={isDeletePopupOpen} handleClose={handleClose} handleDelete={handleDelete} Data={params.row}   />}
       </>

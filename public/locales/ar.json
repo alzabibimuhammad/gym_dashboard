@@ -188,6 +188,9 @@
   "Remaining Time":"الوقت المتبقي",
   "Subscription Date":"تاريخ الاشتراك",
   "days Not Paid":"الايام الغير مدفوعة",
-  "Status":"الحالة"
+  "Status":"الحالة",
+  "Active":"نشط",
+  "paid":"مدفوع",
+  "unpaid":"غير مدفوع"
 
 }
