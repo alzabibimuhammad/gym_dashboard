@@ -1,5 +1,6 @@
 
  export const SubscriptionsData = elements => {
+
   return elements.map(element => {
     const dateOnly = element?.SubscriptionDate ? element.SubscriptionDate.split('T')[0] : null;
 
