@@ -51,9 +51,12 @@ code[class*='language-'] {
 }
 .css-18ro57k-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
   filter:none; /* needed for firefox! */
-  box-shadow: 0 0 0 100px rgb(42, 42, 49) inset !important;
+  box-shadow: 0 0 0 100px rgb(100, 100, 110) inset !important;
 }
 
+.rtl-18ro57k-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill{
+  box-shadow: 0 0 0 100px rgb(100, 100, 110) inset !important;
+}
 
 .button {
   all: unset;
