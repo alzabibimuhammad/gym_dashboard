@@ -38,7 +38,7 @@ const useSubscriptionColumn = () => {
   return useMemo(() => [
     {
       field: 'image',
-       headerName: 'Coach Image',
+       headerName: '',
 
         renderCell: (params)=>{
 
@@ -56,15 +56,14 @@ const useSubscriptionColumn = () => {
     },
 
     {
-      type: 'RemainingTime',
       field: 'remainingTime',
-      headerName: 'Remaining Time',
+      headerName: t("Remaining Time"),
       flex: 2
     },
 
     {
       field: 'paidStatus',
-      headerName: 'paid Status',
+      headerName: t("Remaining Time"),
       flex: 2,
       renderCell: (params) => {
         return (
@@ -72,48 +71,35 @@ const useSubscriptionColumn = () => {
           <Chip
             label={params.value}
             color={params.value === 'paid' ? 'success' : 'primary'}
-            
+
           />
         </Stack>
         );
-      
+
     },
 
   },
-   
-
-
-
-
-
-
-
-
-
-
-
-
     {
       field: 'daysNotPaid',
-      headerName: 'days Not Paid',
+      headerName: t('days Not Paid'),
       flex: 2,
-  
+
     },
     {
       field: 'SubscriptionDate',
-      headerName: 'Subscription Date',
+      headerName: t('Subscription Date'),
       flex: 2
     },
     {
       field: 'Status',
-      headerName: 'Status',
+      headerName: t('Status'),
       flex: 2,
       renderCell: (params) => {
         return(
         <>
         <Stack direction={"row"} spacing={2} justifyContent={"center"} marginTop={"10px"} >
-  
-     
+
+
         <Box>
 
 
@@ -122,7 +108,7 @@ const useSubscriptionColumn = () => {
             </Button>
 
           </Box>
-         
+
           <Box >
 
           </Box>
