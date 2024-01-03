@@ -58,7 +58,6 @@ const AuthProvider = ({ children }) => {
           position: "top-left",
           style: {
             backgroundColor: "green",
-            color: "7c7b7e",
             width: "500px",
           },
         });
@@ -68,7 +67,6 @@ const AuthProvider = ({ children }) => {
           position: "top-left",
           style: {
             backgroundColor: "#e20d29",
-            color: "7c7b7e",
             width: "500px",
           },
         });
