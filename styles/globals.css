@@ -49,6 +49,7 @@ code[class*='language-'] {
   filter:none; /* needed for firefox! */
   box-shadow: 0 0 0 100px rgb(225, 225, 230) inset !important;
 }
+
 .css-18ro57k-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
   filter:none; /* needed for firefox! */
   box-shadow: 0 0 0 100px rgb(100, 100, 110) inset !important;

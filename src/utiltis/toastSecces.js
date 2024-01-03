@@ -6,7 +6,6 @@ export const showSuccesToast = (errorMessage) => {
         position: "top-left",
         style: {
           backgroundColor: "green",
-          color: "7c7b7e",
           width: "500px",
         }})
 };

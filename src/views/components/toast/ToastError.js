@@ -17,7 +17,7 @@ const ToastError = () => {
       <Icon icon='tabler:x' fontSize='2rem' />
       <Typography sx={{ mb: 4, fontWeight: 600 }}>Error</Typography>
       <Typography sx={{ mb: 3 }}>Creates a notification with an animated error icon.</Typography>
-      <Button sx={{ mb: 8 }} color='error' variant='contained' onClick={() => toast.error("This didn't work.")}>
+      <Button sx={{ mb: 8 }}  variant='contained' onClick={() => toast.error("This didn't work.")}>
         Error
       </Button>
     </Box>
