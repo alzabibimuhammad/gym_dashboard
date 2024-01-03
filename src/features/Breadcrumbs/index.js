@@ -12,6 +12,7 @@ const BreadcrumbLink = styled(Link)`
   }
 `;
 
+
 const BreadcrumbsContainer = styled.div`
   display: flex;
   gap: 3px;
@@ -44,7 +45,7 @@ const Breadcrumbs = () => {
 
   return (
     <>
-   
+
     <BreadcrumbsContainer>
       {crumbs.map((crumb, index) => (
         <BreadcrumbLink key={index} href={crumb.link}>
