@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getPlayersData } from './store'
 import { useEffect, useState } from 'react'
 import PlayerGrid from 'src/features/Player/Componets/DataGrid'
-import Lottel from 'src/@core/components/Lottie'
 import { Box } from '@mui/system'
+import { CircularProgress } from '@mui/material'
 
 
 const PlayersPage = () => {
@@ -19,7 +19,7 @@ const [Data,setData]=useState([])
 
   return (
     <>
-    {Data ? <PlayerGrid rows={store.data?.data} /> : <Box sx={{display: 'flex',justifyContent:"center",alignItems:"center",height:'50vh' }} ><Lottel /></Box>}
+    {Data ? <PlayerGrid rows={store.data?.data} /> : <Box sx={{display: 'flex',justifyContent:"center",alignItems:"center",height:'50vh' }} ><CircularProgress /></Box>}
 
     </>
   )
