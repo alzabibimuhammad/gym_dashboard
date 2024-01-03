@@ -46,18 +46,20 @@ code[class*='language-'] {
 
 }
 :-webkit-autofill {
-  filter:none; /* needed for firefox! */
-  box-shadow: 0 0 0 100px rgb(225, 225, 230) inset !important;
+  filter:none;
+  box-shadow: 0 0 0 100px rgb(240,240, 240) inset !important;
 }
 
 .css-18ro57k-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
-  filter:none; /* needed for firefox! */
-  box-shadow: 0 0 0 100px rgb(100, 100, 110) inset !important;
+  filter:none;
+  box-shadow: 0 0 0 100px rgb(120,120,120) inset !important;
 }
 
 .rtl-18ro57k-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill{
-  box-shadow: 0 0 0 100px rgb(100, 100, 110) inset !important;
+  box-shadow: 0 0 0 100px rgb(120,120,120) inset !important;
 }
+
+
 
 .button {
   all: unset;
@@ -141,18 +143,4 @@ code[class*='language-'] {
 }
 
 
-:-webkit-autofill {
-  filter:none; /* needed for firefox! */
-  /* box-shadow: 0 0 0 100px blue inset !important; */
-  box-shadow: 0 0 0 100px rgb(150, 150, 160) inset !important;
 
-  /* box-shadow: 0 0 0 100px rgb(130, 130, 150) inset !important; */
-}
-
-.css-18ro57k-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
-  filter:none; /* needed for firefox! */
-  /* box-shadow: 0 0 0 100px rgb(42, 42, 49) inset !important; */
-  box-shadow: 0 0 0 100px rgb(100, 100, 110) inset !important;
-
-  /* box-shadow: 0 0 0 100px red inset !important; */
-}
