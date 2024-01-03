@@ -1,12 +1,13 @@
 import React from "react";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../../../public/logoo.json";
+import { Box } from "@mui/system";
   function Lottel(){
 
     return(
-<div style={{width:'250px', height:'250px' }}>
-<Lottie animationData={groovyWalkAnimation} loop={true} />
-</div>
+      <Box sx={{ width:'100px' }}>
+      <Lottie  animationData={groovyWalkAnimation} loop={true} />
+      </Box>
     )
  }
  export default Lottel

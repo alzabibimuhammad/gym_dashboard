@@ -3,6 +3,7 @@ import { getCoachesData } from './store'
 import { useEffect, useState } from 'react'
 import CoachGrid from 'src/features/Coach/Componets/DataGrid'
 import { Box, CircularProgress } from '@mui/material'
+import Lottel from 'src/@core/components/Lottie'
 
 
 const CoachesPage = () => {
@@ -20,9 +21,7 @@ const [Data,setData]=useState([])
   return (
     <>
    {Data ? <CoachGrid rows={store.data?.data}  /> :
-     <Box sx={{display: 'flex',justifyContent:"center",alignItems:"center",height:'50vh'}}>
-     <CircularProgress />
-     </Box>
+   <Box sx={{display: 'flex',justifyContent:"center",alignItems:"center",height:'50vh' }} ><Lottel /></Box>
      }
 
     </>

@@ -24,18 +24,14 @@ export default function Dashboard() {
   const [statistics,setStatistics]=useState([])
   const [FinanceMonth,setFinanceMonth]=useState([])
   const [Annual,setAnnual]=useState([])
-
   const {t} = useTranslation()
-
   const dispatch = useDispatch()
-
   useEffect(() => {
     dispatch(getMvp())
     dispatch(getActivePlayer())
     dispatch(getStatistics())
     dispatch(getFinanceMonth())
     dispatch(getAnnualIncome())
-
     setData(store?.Mvpdata)
     setActive(store?.ActivePlayer)
     setStatistics(store?.Statistics)
