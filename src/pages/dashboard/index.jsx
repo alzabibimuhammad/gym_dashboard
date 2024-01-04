@@ -35,8 +35,8 @@ export default function Dashboard() {
     setData(store?.Mvpdata)
     setActive(store?.ActivePlayer)
     setStatistics(store?.Statistics)
-    setFinanceMonth(store.FinanceMonth)
-    setAnnual(store.AnnualIncome)
+    setFinanceMonth(store?.FinanceMonth.data)
+      setAnnual(store.AnnualIncome)
   }, [dispatch,store?.Mvpdata.length,store?.ActivePlayer.length,store?.Statistics.length,store?.FinanceMonth.length,store?.AnnualIncome.length])
 
 
