@@ -22,6 +22,7 @@ const ActivePlayer = (Data) => {
   useEffect(()=>{
     setTotal(data?.active_players ? (data?.active_players / data?.total_players) * 100 : 0)
   },[data])
+  
   const options = {
     chart: {
       sparkline: { enabled: true }
@@ -79,7 +80,7 @@ const ActivePlayer = (Data) => {
   }
 
   return (
-    <Card>
+    <Card sx={{height:"50%"}}>
       <CardContent>
         <Typography variant='h6' sx={{ color: '#65B741' }}>
         {t("Active Players")}:  {data?.active_players}

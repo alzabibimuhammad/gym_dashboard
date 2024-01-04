@@ -26,7 +26,7 @@ const MonthIncome = props => {
   const RenderChip = chipColor === 'default' ? Chip : CustomChip
 
   return (
-    <Card sx={{ ...sx }}>
+    <Card sx={{ ...sx ,height:"50%"}}>
       <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
         <CustomAvatar
           skin='light'
