@@ -56,7 +56,7 @@ export default function Dashboard() {
 
       {/* row 2 */}
       <Stack  direction={{ xs: 'column', sm: 'row' }} spacing={7} >
-        <Box width={{ xs:'100%',sm:'15.7%' }} >
+        <Box sx={{ flex:'0.24' }}>
 
           <MonthIncome
             stats={`${Annual?.data?.Annual_finance||0}$`}
@@ -69,7 +69,7 @@ export default function Dashboard() {
           />
         </Box>
 
-        <Box  width={{ xs:'100%',sm:'15.7%' }}>
+        <Box sx={{ flex:'0.24' }}>
         <Link style={{ textDecoration:'none' }} href='/players' >
           {Active ? <ActivePlayer Data={Active} />:null}
 
