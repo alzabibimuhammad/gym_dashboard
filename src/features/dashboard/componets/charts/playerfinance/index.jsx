@@ -22,6 +22,7 @@ import ReactApexcharts from 'src/@core/components/react-apexcharts'
 
 // ** Util Import
 import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { Stack } from '@mui/system'
 
 
 
@@ -32,14 +33,16 @@ const PlayerFinance = (Data) => {
   useEffect(()=>{
     setData(Data)
   },[])
+  let Month = [Data?.Data[5]?.finance,Data?.Data[4]?.finance,Data?.Data[3]?.finance,Data?.Data[2]?.finance,Data?.Data[1]?.finance,Data?.Data[0]?.finance]
 
   const tabData = [
     {
       type: 'orders',
       avatarIcon: 'tabler:shopping-cart',
-      series: [{ data: [28, 10, 45, 38, 15,50] }]
+      series: [{ data: [...Month] }]
     },
   ]
+
 
   const renderTabPanels = (value, theme, options, colors, data) => {
     console.log('rendersdkjfdp',data?.Data?.data?.[0])
@@ -112,8 +115,15 @@ const PlayerFinance = (Data) => {
     xaxis: {
       axisTicks: { show: false },
       axisBorder: { color: theme.palette.divider },
-      categories: [ `${data?.Data?.data?.[4]?.monthName||''}`,`${data?.Data?.data?.[3]?.monthName}`, `${data?.Data?.data?.[2]?.monthName}`, `${data?.Data?.data?.[1]?.monthName}`, `${data?.Data?.data?.[0]?.monthName}`],
-      labels: {
+      categories: [
+            `${Data?.Data?.[5]?.monthName}`,
+            `${Data?.Data?.[4]?.monthName}`,
+            `${Data?.Data?.[3]?.monthName}`,
+            `${Data?.Data?.[2]?.monthName}`,
+            `${Data?.Data?.[1]?.monthName}`,
+            `${Data?.Data?.[0]?.monthName}`,
+            ],
+        labels: {
         style: {
           colors: theme.palette.text.disabled,
           fontFamily: theme.typography.fontFamily,
@@ -132,19 +142,7 @@ const PlayerFinance = (Data) => {
         }
       }
     },
-    responsive: [
-      {
-        breakpoint: theme.breakpoints.values.sm,
-        options: {
-          plotOptions: {
-            bar: { columnWidth: '60%' }
-          },
-          grid: {
-            padding: { right: 20 }
-          }
-        }
-      }
-    ]
+
   }
 
   return (
